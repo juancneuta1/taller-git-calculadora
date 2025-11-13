@@ -12,7 +12,11 @@ def division(a, b):
         return "Error: No se puede dividir entre cero."
     return a / b
 
-print("\n====== CALCULADORA BÁSICA ======")
+print("====================================")
+print("      CALCULADORA - JUAN Y XIN      ")
+print("      INGENIERIA DE SOFTWARE I      ")
+print("====================================")
+
 print("1. Suma")
 print("2. Resta")
 print("3. Multiplicación")
