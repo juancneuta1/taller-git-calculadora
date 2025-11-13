@@ -31,4 +31,5 @@ elif opcion == 3:
 elif opcion == 4:
     print("Resultado:", division(num1, num2))
 else:
-    print("Opción inválida")
+    print("Error: la opción ingresada no existe. Debes elegir entre 1 y 4.")
+
