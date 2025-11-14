@@ -15,16 +15,19 @@ def division(a, b):
 def potencia(a, b):
     return a ** b
 
-print("====================================")
-print("      CALCULADORA - JUAN Y XIN      ")
-print("      INGENIERIA DE SOFTWARE I      ")
-print("====================================")
+def mostrar_menu():
+    print("====================================")
+    print("  (=^･ω･^=)  CALCULADORA  (=^･ω･^=)  ")
+    print("      INGENIERIA DE SOFTWARE I       ")
+    print("====================================")
+    print(" 1. Suma      🐾")
+    print(" 2. Resta     🐾")
+    print(" 3. Multiplicación 🐾")
+    print(" 4. División  🐾")
+    print(" 5. Potencia  🐾")
+    print(" 6. Salir     🐾")
+    print("====================================")
 
-print("1. Suma")
-print("2. Resta")
-print("3. Multiplicación")
-print("4. División")
-print("5. Potencia")
 
 # Validación para evitar letras u otros caracteres
 try:
