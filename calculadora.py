@@ -15,6 +15,8 @@ def division(a, b):
         return "Error: No se puede dividir entre cero."
     return a / b
 
+print("====================================")
+print("      CALCULADORA - JUAN Y XIN      ")
 def potencia(a, b):
     return a ** b
 
