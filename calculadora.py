@@ -51,4 +51,4 @@ elif opcion == 4:
 elif opcion == 5:
     print("Resultado:", potencia(num1, num2))
 else:
-    print("Error: la opción ingresada no existe. Debes elegir entre 1 y 5.")
+    print("Error: la opción ingresada no existe. Debe elegir entre 1 y 5.")
