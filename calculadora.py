@@ -12,6 +12,9 @@ def division(a, b):
         return "Error: No se puede dividir entre cero."
     return a / b
 
+def potencia(a, b):
+    return a ** b
+
 print("====================================")
 print("      CALCULADORA - JUAN Y XIN      ")
 print("      INGENIERIA DE SOFTWARE I      ")
@@ -21,10 +24,21 @@ print("1. Suma")
 print("2. Resta")
 print("3. Multiplicación")
 print("4. División")
+print("5. Potencia")
 
-opcion = int(input("Selecciona una opción: "))
-num1 = float(input("Primer número: "))
-num2 = float(input("Segundo número: "))
+# Validación para evitar letras u otros caracteres
+try:
+    opcion = int(input("Selecciona una opción: "))
+except ValueError:
+    print("Error: Debes ingresar un número válido.")
+    exit()
+
+try:
+    num1 = float(input("Primer número: "))
+    num2 = float(input("Segundo número: "))
+except ValueError:
+    print("Error: Solo puedes ingresar números.")
+    exit()
 
 if opcion == 1:
     print("Resultado:", suma(num1, num2))
@@ -34,6 +48,7 @@ elif opcion == 3:
     print("Resultado:", multiplicacion(num1, num2))
 elif opcion == 4:
     print("Resultado:", division(num1, num2))
+elif opcion == 5:
+    print("Resultado:", potencia(num1, num2))
 else:
-    print("Error: la opción ingresada no existe. Debes elegir entre 1 y 4.")
-
+    print("Error: la opción ingresada no existe. Debes elegir entre 1 y 5.")
